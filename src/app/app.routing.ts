@@ -5,16 +5,7 @@ import { ModuleWithProviders } from '@angular/core';
 export const routes: Routes = [
     {
         path: '',
-        loadChildren: 'app/pages/pages.module#PagesModule',
-        canActivate: []
-    },
-    {
-        path: '',
-        loadChildren: ''
-    },
-    {
-        path: '',
-        loadChildren: ''
+        loadChildren: 'app/pages/pages.module#PagesModule'
     }
 
 ];

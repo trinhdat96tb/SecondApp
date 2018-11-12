@@ -1,0 +1,21 @@
+.body{
+    position: relative;
+    height:100vh;
+}
+.aside-content{
+    position: fixed;
+    width:300px;
+    height:100%;
+}
+.page-container{
+    width:100%;
+    padding-left:300px;
+}
+.page-container .header{
+    width: 100%;
+    position: fixed;
+    padding-right:300px;
+}
+.content-page {
+    padding: 85px 10px 10px 10px;
+}

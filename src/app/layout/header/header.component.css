@@ -1,7 +1,21 @@
 .header{
     width:100%;
-    height:75px;
-    background:lightblue;
-    text-align: center;
-    position: fixed;
+    height:76px;
+    border-bottom: 1px solid gray;
+    background: #c1c1c1;
+}
+.content{
+    width:100%;
+    display: inline-block;
+    margin-top: 15px;
+}
+.content .row{
+    margin: 0px !important;
+}
+.content .col-sm-3 img{
+    float: right;
+    margin-right: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50% !important;
 }
