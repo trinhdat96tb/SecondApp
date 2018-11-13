@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { HeroService } from '../.././services/hero.service';
+import { HeroService } from '../../services/hero.service';
 
 @Component({
-  selector: 'app-page1',
-  templateUrl: './page1.component.html',
-  styleUrls: ['./page1.component.css']
+  selector: 'home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class Page1Component implements OnInit {
+export class HomeComponent implements OnInit {
   title = 'SecondApp';
   options: any;
   heroes: any[] = [];

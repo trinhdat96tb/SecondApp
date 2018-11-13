@@ -1,15 +1,15 @@
 import { PagesComponent} from './pages.component';
 import { Routes, RouterModule} from '@angular/router';
-import { Page1Component } from './page1/page1.component';
-import { Page2Component } from './page2/page2.component';
-import { Page3Component } from './page3/page3.component';
+import { HomeComponent } from './home/home.component';
+import { FormComponent } from './form/form.component';
+import { PresenterComponent } from './presenter/presenter.component';
 import { Page4Component } from './page4/page4.component';
 import { Page5Component } from './page5/page5.component';
 
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: '/page/page1',
+        redirectTo: '/page/home',
         pathMatch: 'full'
     },
     {
@@ -18,16 +18,16 @@ export const routes: Routes = [
         canActivate: [],
         children: [
             {
-                path: 'page1',
-                component: Page1Component
+                path: 'home',
+                component: HomeComponent
             },
             {
-                path: 'page2',
-                component: Page2Component
+                path: 'form',
+                component: FormComponent
             },
             {
-                path: 'page3',
-                component: Page3Component
+                path: 'presenter',
+                component: PresenterComponent
             },
             {
                 path: 'page4',
