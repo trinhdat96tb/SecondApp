@@ -4,13 +4,126 @@
       <img src="../.././assets/images/logo.png" alt="logo">
     </a>
   </div>
-  <div class="menu-content">
-    <ul>
+  <div class="menu-content" menu-directive>
+    <div class="menu-detail">
+      <a routerLink="/page/home" routerLinkActive="active">
+        <button class="accordion toggle">Home</button>
+      </a>
+    </div>
+    <div class="menu-detail">
+      <a routerLink="/page/form" routerLinkActive="active">
+        <button class="accordion toggle">Form</button>
+      </a>
+    </div>
+    <div class="menu-detail">
+      <a routerLink="/page/presenter" routerLinkActive="active">
+        <button class="accordion toggle">Presenter</button>
+      </a>
+    </div>
+    <div class="menu-detail">
+      <button class="accordion toggle">Pages</button>
+      <div class="panel">
+        <ul>
+          <li>
+            <a routerLink="/page/presenter" routerLinkActive="active">
+              <button class="accordion toggle">Login</button>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/page/presenter" routerLinkActive="active">
+              <button class="accordion toggle">Register</button>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/page/presenter" routerLinkActive="active">
+              <button class="accordion toggle">Reset Password</button>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/page/presenter" routerLinkActive="active">
+              <button class="accordion toggle">Lock Screen</button>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/page/presenter" routerLinkActive="active">
+              <button class="accordion toggle">Login</button>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/page/presenter" routerLinkActive="active">
+              <button class="accordion toggle">Register</button>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/page/presenter" routerLinkActive="active">
+              <button class="accordion toggle">Reset Password</button>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/page/presenter" routerLinkActive="active">
+              <button class="accordion toggle">Lock Screen</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="menu-detail">
+      <button class="accordion toggle">
+        Charts
+      </button>
+      <div class="panel">
+        <ul>
+          <li>
+            <a routerLink="/page/chart/bar" routerLinkActive="active">
+              <button class="accordion toggle">Bar Chart</button>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/page/chart/line" routerLinkActive="active">
+              <button class="accordion toggle">Line Chart</button>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/page/presenter" routerLinkActive="active">
+              <button class="accordion toggle">Pie Chart</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <!-- <ul>
       <li><a routerLink="/page/home" routerLinkActive="active">Home</a></li>
       <li><a routerLink="/page/form" routerLinkActive="active">Form</a></li>
       <li><a routerLink="/page/presenter" routerLinkActive="active">Presenter</a></li>
       <li><a routerLink="/page/page4" routerLinkActive="active">Page4</a></li>
-      <li><a routerLink="/page/page5" routerLinkActive="active">Page5</a></li>
-    </ul>
+      <li>
+        <button class="accordion toggle">Charts</button>
+        <div class="panel">
+          <ul>
+            <li><a routerLink="#" routerLinkActive="active">Bar Chart</a></li>
+            <li><a routerLink="#" routerLinkActive="active">Line Chart</a></li>
+            <li><a routerLink="#" routerLinkActive="active">Pie Chart</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul> -->
+    <!-- <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script> -->
   </div>
 </div>

@@ -2,8 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { TableComponent } from './layout/table/table.component';
-import { MenuComponent } from './layout/menu/menu.component';
 import { HeroService } from './services/hero.service';
 
 import { HttpClientModule } from '@angular/common/http';

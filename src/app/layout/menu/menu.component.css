@@ -11,8 +11,35 @@
     overflow: auto;
     padding-top:20px;
     border: 1px solid gray;
+    overflow: auto;
 }
-.menu-content ul li{
+.menu-content .menu-detail{
+    width: 100%;
+    padding: 2px;
+
+}
+.menu-content .menu-detail .accordion{
+    text-align: left;
+    width: 100%;
+    padding:10px 10px 10px 30px;
+    background: white;
+    border:none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.menu-content .menu-detail .accordion:hover{
+    background:#f9fafb;
+}
+.accordion a { 
+    text-decoration: none;
+}
+ul li{
     list-style: none;
-    padding:5px;
+}
+.panel {
+    display: none;
+}
+.panel.show {
+    margin-top:5px;
+    display: block;
 }

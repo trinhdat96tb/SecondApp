@@ -4,7 +4,6 @@ import { HomeComponent } from './home/home.component';
 import { FormComponent } from './form/form.component';
 import { PresenterComponent } from './presenter/presenter.component';
 import { Page4Component } from './page4/page4.component';
-import { Page5Component } from './page5/page5.component';
 
 export const routes: Routes = [
     {
@@ -34,8 +33,8 @@ export const routes: Routes = [
                 component: Page4Component
             },
             {
-                path: 'page5',
-                component: Page5Component
+                path: 'chart',
+                loadChildren: 'app/pages/chart/chart.module#ChartModule'
             }
         ]
     }

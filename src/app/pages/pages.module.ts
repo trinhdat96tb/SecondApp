@@ -7,17 +7,18 @@ import { HomeComponent } from './home/home.component';
 import { FormComponent } from './form/form.component';
 import { PresenterComponent } from './presenter/presenter.component';
 import { Page4Component } from './page4/page4.component';
-import { Page5Component } from './page5/page5.component';
 import { PagesComponent } from './pages.component'
 import { MenuComponent } from '../layout/menu/menu.component';
 import { HeaderComponent } from '../layout/header/header.component';
-
+import { UpperCaseDirective, MnDirective } from '../layout/menu/menu.directive';
+import { ChartModule } from "./chart/chart.module";
 
 @NgModule({
     imports: [
         routing,
         BrowserModule,
         FormsModule,
+        ChartModule
     ],
     declarations: [
         PagesComponent,
@@ -25,10 +26,11 @@ import { HeaderComponent } from '../layout/header/header.component';
         FormComponent,
         PresenterComponent,
         Page4Component,
-        Page5Component,
         MenuComponent,
         HeaderComponent,
-        TableComponent
+        TableComponent,
+        UpperCaseDirective,
+        MnDirective,
     ],
     providers: [
 
