@@ -5,7 +5,7 @@ import { ChartComponent } from './chart.component';
 
 export const routes: Routes = [
     {
-        path: 'chart',
+        path: '',
         component: ChartComponent,
         children: [
             {

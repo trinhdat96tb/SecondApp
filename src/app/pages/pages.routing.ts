@@ -8,7 +8,7 @@ import { Page4Component } from './page4/page4.component';
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: '/page/home',
+        redirectTo: '/page',
         pathMatch: 'full'
     },
     {
@@ -17,24 +17,29 @@ export const routes: Routes = [
         canActivate: [],
         children: [
             {
+                path: '',
+                redirectTo: 'home',
+                pathMatch: 'full'
+            },
+            {
                 path: 'home',
-                component: HomeComponent
+                loadChildren: './home/home.module#HomeModule'
             },
             {
                 path: 'form',
-                component: FormComponent
+                loadChildren: './form/form.module#FormModule'
             },
             {
                 path: 'presenter',
-                component: PresenterComponent
+                loadChildren: './presenter/presenter.module#PresenterModule'
             },
             {
                 path: 'page4',
-                component: Page4Component
+                loadChildren: './page4/page4.module#Page4Module'
             },
             {
                 path: 'chart',
-                loadChildren: 'app/pages/chart/chart.module#ChartModule'
+                loadChildren: './chart/chart.module#ChartModule'
             }
         ]
     }
