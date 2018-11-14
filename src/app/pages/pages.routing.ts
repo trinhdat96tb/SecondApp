@@ -34,12 +34,12 @@ export const routes: Routes = [
             },
             {
                 path: 'chart',
-                loadChildren: 'app/pages/chart/chart.module#ChartModule'
+                loadChildren: './chart/chart.module#ChartModule'
             }
         ]
     }
 ];
 
-export const routing = RouterModule.forRoot(routes);
+export const routing = RouterModule.forChild(routes);
 
 
