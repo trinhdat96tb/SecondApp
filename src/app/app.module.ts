@@ -10,11 +10,6 @@ import { PagesModule } from './pages/pages.module';
 
 import{ routing } from './app.routing'
 
-// const appRoutes: Routes = [
-//   { path: 'page1', component: Page1Component },
-//   { path: 'page2', component: Page2Component }
-// ]
-
 @NgModule({
   declarations: [
     AppComponent,
