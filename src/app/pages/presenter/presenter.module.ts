@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
 import { PresenterComponent } from './presenter.component';
+import { routing } from './presenter.routing'
 
 @NgModule({
     imports: [
-        BrowserModule,
-        FormsModule,
+        routing
     ],
     declarations: [
         PresenterComponent

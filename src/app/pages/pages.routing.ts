@@ -1,18 +1,15 @@
-import { PagesComponent} from './pages.component';
-import { Routes, RouterModule} from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { FormComponent } from './form/form.component';
-import { PresenterComponent } from './presenter/presenter.component';
-import { Page4Component } from './page4/page4.component';
+import { PagesComponent } from './pages.component';
+import { Routes, RouterModule } from '@angular/router';
+import { ModuleWithProviders } from '@angular/core';
 
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: '/page',
+        redirectTo: '/app',
         pathMatch: 'full'
     },
     {
-        path: 'page',
+        path: 'app',
         component: PagesComponent,
         canActivate: [],
         children: [
@@ -42,9 +39,10 @@ export const routes: Routes = [
                 loadChildren: './chart/chart.module#ChartModule'
             }
         ]
-    }
+    },
+
 ];
 
-export const routing = RouterModule.forChild(routes);
+export const routing: ModuleWithProviders = RouterModule.forChild(routes);
 
 

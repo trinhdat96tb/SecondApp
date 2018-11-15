@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
 import { FormComponent } from './form.component';
+import { routing } from './form.routing';
 
 @NgModule({
     imports: [
-        BrowserModule,
-        FormsModule,
+        routing
     ],
     declarations: [
         FormComponent

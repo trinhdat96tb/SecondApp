@@ -6,8 +6,6 @@ import { HeroService } from './services/hero.service';
 
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
-import { PagesModule } from './pages/pages.module';
-
 import{ routing } from './app.routing'
 
 @NgModule({
@@ -18,7 +16,6 @@ import{ routing } from './app.routing'
     HttpClientModule,
     BrowserModule,
     RouterModule,
-    PagesModule,
     routing
   ],
   providers: [HeroService],

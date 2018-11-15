@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home.component';
 import { TableModule } from '../../layout/table/table.module';
+import { routing } from './home.routing';
 
 @NgModule({
     imports: [
-        BrowserModule,
-        FormsModule,
+        routing,
         TableModule
     ],
     declarations: [
