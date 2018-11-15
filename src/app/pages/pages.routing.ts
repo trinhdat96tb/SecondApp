@@ -20,18 +20,18 @@ export const routes: Routes = [
                 path: 'home',
                 component: HomeComponent
             },
-            {
-                path: 'form',
-                component: FormComponent
-            },
-            {
-                path: 'presenter',
-                component: PresenterComponent
-            },
-            {
-                path: 'page4',
-                component: Page4Component
-            },
+            // {
+            //     path: 'form',
+            //     component: FormComponent
+            // },
+            // {
+            //     path: 'presenter',
+            //     component: PresenterComponent
+            // },
+            // {
+            //     path: 'page4',
+            //     component: Page4Component
+            // },
             {
                 path: 'chart',
                 loadChildren: './chart/chart.module#ChartModule'
