@@ -6,6 +6,9 @@ export const routes: Routes = [
     {
         path: '',
         loadChildren: 'app/pages/pages.module#PagesModule'
+    },
+    {
+        path: '**', redirectTo: ''
     }
 
 ];
