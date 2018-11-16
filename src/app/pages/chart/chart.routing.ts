@@ -7,19 +7,20 @@ export const routes: Routes = [
     {
         path: '',
         component: ChartComponent,
-        children: [{
-            path: '',
-            redirectTo: '/bar',
-            pathMatch: 'full'
-        },
-        {
-            path: 'bar',
-            component: BarComponent
-        },
-        {
-            path: 'line',
-            component: LineComponent
-        }
+        children: [
+            {
+                path: '',
+                redirectTo: '/bar',
+                pathMatch: 'full'
+            },
+            {
+                path: 'bar',
+                component: BarComponent
+            },
+            {
+                path: 'line',
+                component: LineComponent
+            }
         ]
     }
 ]
