@@ -1,16 +1,33 @@
 import { Routes, RouterModule } from '@angular/router';
 import { Page4Component } from './page4.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { ResetpassComponent } from './resetpass/resetpass.component';
 
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: '/page4',
-        pathMatch: 'full'
-    },
-    {
-        path: 'page4',
-        component: Page4Component
+        component: Page4Component,
+        children: [
+            {
+                path: '',
+                redirectTo: '/login',
+                pathMatch: 'full'
+            },
+            {
+                path: 'login',
+                component: LoginComponent
+            },
+            {
+                path: 'register',
+                component: RegisterComponent 
+            },
+            {
+                path: 'resetpass',
+                component:ResetpassComponent
+            }
+        ]
     }
 ]
 
-export const routing = RouterModule.forRoot(routes);
+export const routing = RouterModule.forChild(routes);

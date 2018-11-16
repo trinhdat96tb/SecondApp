@@ -1,7 +1,6 @@
 .logo{
     text-align: center;
-    height:75px;
-    padding-top:12px;
+    height: 50px;
     background: #e6e6ff;
     border-right: 1px solid gray;
 }
@@ -22,19 +21,23 @@
     text-align: left;
     width: 100%;
     padding:10px 10px 10px 30px;
-    background: white;
+    background: #222d32;
     border:none;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: inherit;
+    color:white;
+}
+.menu-detail .accordion .updown{
+    float: right;
+    padding-right:10px;
 }
 .menu-content .menu-detail .accordion:hover{
-    background:#f9fafb;
+    background:#c1c1c1;
 }
 .accordion a { 
     text-decoration: none;
 }
 ul li{
-    list-style: none;
+    list-style-type: circle;
 }
 .panel {
     display: none;
