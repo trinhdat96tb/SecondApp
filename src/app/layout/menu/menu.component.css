@@ -46,3 +46,18 @@ ul li{
     margin-top:5px;
     display: block;
 }
+
+.menu-item .spanleft {
+    display: block;
+}
+.menu-item .spandown {
+    display: none;
+}
+
+.menu-item.show .spanleft{
+    display: none;
+}
+
+.menu-item.show .spandown {
+    display: block;
+}

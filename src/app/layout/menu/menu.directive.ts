@@ -31,6 +31,9 @@ export class MnDirective implements OnInit {
                 let parent = $(this).parent();
                 let child = $(parent).find('.panel');
                 $(child).toggleClass('show');
+
+                let span = $(parent).find('.menu-item');
+                $(span).toggleClass('show');
             })
         })
     }
